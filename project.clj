@@ -42,7 +42,9 @@
                       :main cyberleague.core
                       :repl-options {:init-ns cyberleague.core}}
              :cli     {:main         cyberleague.cli.core
-                       :dependencies [[org.clojure/clojure "1.11.4"]
+                       :dependencies [[org.clojure/tools.cli "1.1.230"]
+                                      [com.cognitect/transit-clj "1.0.324"]
+                                      [org.clojure/clojure "1.11.4"]
                                       [http-kit "2.8.0"]
                                       [com.nextjournal/beholder "1.0.2"]]
                        :repl-options {:init-ns cyberleague.cli.core}}
